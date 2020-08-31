@@ -1,0 +1,1 @@
+../../../MoPub-FacebookAudienceNetwork-Adapters/FacebookAudienceNetwork/FacebookNativeAdAdapter.h

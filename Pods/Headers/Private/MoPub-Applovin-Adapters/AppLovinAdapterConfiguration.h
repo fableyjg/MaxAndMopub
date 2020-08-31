@@ -1,0 +1,1 @@
+../../../MoPub-Applovin-Adapters/AppLovin/AppLovinAdapterConfiguration.h

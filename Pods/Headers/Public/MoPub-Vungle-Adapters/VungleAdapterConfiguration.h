@@ -1,0 +1,1 @@
+../../../MoPub-Vungle-Adapters/Vungle/VungleAdapterConfiguration.h

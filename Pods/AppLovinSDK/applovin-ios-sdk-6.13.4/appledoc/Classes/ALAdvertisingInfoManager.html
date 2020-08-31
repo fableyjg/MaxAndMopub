@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ALAdvertisingInfoManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppLovin iOS SDK 6.13.4 </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AppLovin</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/IDFV">IDFV</option>
+		
+		<option value="//api/name/advertisingTrackingEnabled">advertisingTrackingEnabled</option>
+		
+		<option value="//api/name/appTrackingTransparencyFrameworkAvailable">appTrackingTransparencyFrameworkAvailable</option>
+		
+		<option value="//api/name/authorizationStatus">authorizationStatus</option>
+		
+		<option value="//api/name/authorizationStatusString">authorizationStatusString</option>
+		
+		<option value="//api/name/userTrackingUsageDescription">userTrackingUsageDescription</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/collectIdfa">- collectIdfa</option>
+		
+		<option value="//api/name/requestTrackingAuthorizationWithCompletionHandler:">- requestTrackingAuthorizationWithCompletionHandler:</option>
+		
+		<option value="//api/name/showMissingUserTrackingUsageDescriptionAlertIfNeeded">- showMissingUserTrackingUsageDescriptionAlertIfNeeded</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ALAdvertisingInfoManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ALAdvertisingInfoManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class is responsible for retrieving advertising info and forwarding methods to the AppTrackingTransparency.framework.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/appTrackingTransparencyFrameworkAvailable" title="appTrackingTransparencyFrameworkAvailable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/appTrackingTransparencyFrameworkAvailable">&nbsp;&nbsp;appTrackingTransparencyFrameworkAvailable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>if the @c AppTrackingTransparency framework is available.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (class, nonatomic, assign, readonly, getter=isAppTrackingTransparencyFrameworkAvailable) BOOL appTrackingTransparencyFrameworkAvailable</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>if the @c AppTrackingTransparency framework is available.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAdvertisingInfoManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/advertisingTrackingEnabled" title="advertisingTrackingEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/advertisingTrackingEnabled">&nbsp;&nbsp;advertisingTrackingEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the boolean value of @c ATTrackingManager.trackingAuthorizationStatus on iOS 14+ or @c [[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled] on older OSes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isAdvertisingTrackingEnabled) BOOL advertisingTrackingEnabled</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the boolean value of @c ATTrackingManager.trackingAuthorizationStatus on iOS 14+ or @c [[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled] on older OSes.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAdvertisingInfoManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userTrackingUsageDescription" title="userTrackingUsageDescription"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userTrackingUsageDescription">&nbsp;&nbsp;userTrackingUsageDescription</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>if there is a NSUserTrackingUsageDescription in the Info.plist.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=hasUserTrackingUsageDescription) BOOL userTrackingUsageDescription</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>if there is a NSUserTrackingUsageDescription in the Info.plist.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAdvertisingInfoManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authorizationStatus" title="authorizationStatus"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authorizationStatus">&nbsp;&nbsp;authorizationStatus</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the NSUInteger enum value of @c ATTrackingManager.trackingAuthorizationStatus or our custom (signed) NSInteger values, e.g. ALATTrackingAuthorizationStatusUnavailable (-1).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) NSInteger authorizationStatus</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the NSUInteger enum value of @c ATTrackingManager.trackingAuthorizationStatus or our custom (signed) NSInteger values, e.g. ALATTrackingAuthorizationStatusUnavailable (-1).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAdvertisingInfoManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authorizationStatusString" title="authorizationStatusString"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authorizationStatusString">&nbsp;&nbsp;authorizationStatusString</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the NSString value of @c <a href="#//api/name/authorizationStatus">authorizationStatus</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *authorizationStatusString</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the NSString value of @c <a href="#//api/name/authorizationStatus">authorizationStatus</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAdvertisingInfoManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/IDFV" title="IDFV"></a>
+	<h3 class="method-title"><code><a href="#//api/name/IDFV">&nbsp;&nbsp;IDFV</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the string value of the device&rsquo;s @c identifierForVendor.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly, nullable) NSString *IDFV</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the string value of the device&rsquo;s @c identifierForVendor.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAdvertisingInfoManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/collectIdfa" title="collectIdfa"></a>
+	<h3 class="method-title"><code><a href="#//api/name/collectIdfa">&ndash;&nbsp;collectIdfa</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve the IDFA of this device, subject to internal privacy-related SDK settings.
+This can be a synchronous operation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSString *)collectIdfa</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Retrieve the IDFA of this device, subject to internal privacy-related SDK settings.
+This can be a synchronous operation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAdvertisingInfoManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestTrackingAuthorizationWithCompletionHandler:" title="requestTrackingAuthorizationWithCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestTrackingAuthorizationWithCompletionHandler:">&ndash;&nbsp;requestTrackingAuthorizationWithCompletionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Forwards @c requestTrackingAuthorizationWithCompletionHandler: to @c ATTrackingManager.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestTrackingAuthorizationWithCompletionHandler:(void ( ^ ) ( NSUInteger status ))<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Forwards @c requestTrackingAuthorizationWithCompletionHandler: to @c ATTrackingManager.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAdvertisingInfoManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showMissingUserTrackingUsageDescriptionAlertIfNeeded" title="showMissingUserTrackingUsageDescriptionAlertIfNeeded"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showMissingUserTrackingUsageDescriptionAlertIfNeeded">&ndash;&nbsp;showMissingUserTrackingUsageDescriptionAlertIfNeeded</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Shows an alert, if needed, providing information and a documentation link on the missing @c NSUserTrackingUsageDescription Info.plist key.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showMissingUserTrackingUsageDescriptionAlertIfNeeded</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Shows an alert, if needed, providing information and a documentation link on the missing @c NSUserTrackingUsageDescription Info.plist key.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALAdvertisingInfoManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 AppLovin. All rights reserved. Updated: 2020-08-14</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

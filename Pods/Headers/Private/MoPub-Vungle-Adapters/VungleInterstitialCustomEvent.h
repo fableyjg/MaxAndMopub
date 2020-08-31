@@ -1,0 +1,1 @@
+../../../MoPub-Vungle-Adapters/Vungle/VungleInterstitialCustomEvent.h

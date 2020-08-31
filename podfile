@@ -1,0 +1,25 @@
+# pod 'MoPub-IronSource-Adapters','7.0.0.0'
+
+# Sourcessource 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '10.0'
+          
+target 'MaxandMopub' dopod 'AppLovinSDK'
+pod 'AppLovinMediationFacebookAdapter'
+pod 'AppLovinMediationMintegralAdapter'
+pod ‘AppLovinMediationGoogleAdapter’
+pod 'AppLovinMediationGoogleAdManagerAdapter'
+pod ‘AppLovinMediationIronSourceAdapter’
+pod ‘AppLovinMediationTencentGDTAdapter’
+pod ‘AppLovinMediationUnityAdsAdapter’
+pod ‘AppLovinMediationVungleAdapter’
+pod 'AppLovinMediationByteDanceAdapter'
+
+pod 'mopub-ios-sdk'
+pod 'MoPub-Applovin-Adapters','6.13.4'
+pod 'MoPub-FacebookAudienceNetwork-Adapters','5.10.1.1'
+pod 'MoPub-AdMob-Adapters','7.64.0.1'
+pod 'MoPub-Pangle-Adapters','3.2.0.1.0'
+pod 'MoPub-UnityAds-Adapters','3.4.8.0'
+pod 'MoPub-Vungle-Adapters','6.7.1.0'
+end

@@ -1,0 +1,1 @@
+../../../mopub-ios-sdk/MoPubSDK/NativeAds/Internal/Categories/MPNativeAdError+VAST.h

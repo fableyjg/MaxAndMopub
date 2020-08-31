@@ -1,0 +1,1 @@
+../../../mopub-ios-sdk/MoPubSDK/Internal/Fullscreen/MPFullscreenAdAdapter+Video.h

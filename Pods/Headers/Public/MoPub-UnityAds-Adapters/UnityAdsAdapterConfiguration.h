@@ -1,0 +1,1 @@
+../../../MoPub-UnityAds-Adapters/UnityAds/UnityAdsAdapterConfiguration.h
